@@ -26,7 +26,7 @@ function solution(input) {
       return sumA - sumB;
     }
 
-    return a < b ? -1 : a > b ? 1 : 0;
+    return a.localeCompare(b);
   });
 
   return serialNumbers.join("\n");
